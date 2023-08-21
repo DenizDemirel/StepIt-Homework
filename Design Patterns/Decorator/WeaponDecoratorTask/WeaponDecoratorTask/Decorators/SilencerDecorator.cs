@@ -3,11 +3,10 @@
 using WeaponDecoratorTask.Decorators.Base;
 using WeaponDecoratorTask.Models.Base;
 
-public class SilencerDecorator : WeaponDecorator {
+public class DamageBoostDecorator : WeaponDecorator {
+    public DamageBoostDecorator(Weapon wrapper) : base(wrapper) {
 
-    public SilencerDecorator(Weapon wrapper) : base(wrapper) {
-
-        this.damage = -10;
-        this.mobility = 15;
+        this.damage = 12;
+        this.mobility = -10;
     }
 }

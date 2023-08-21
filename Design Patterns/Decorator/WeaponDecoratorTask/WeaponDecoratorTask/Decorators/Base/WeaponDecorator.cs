@@ -1,5 +1,6 @@
-﻿namespace WeaponDecoratorTask.Decorators.Base; 
+﻿namespace WeaponDecoratorTask.Decorators.Base;
 
+using System;
 using WeaponDecoratorTask.Models.Base;
 
 
@@ -15,5 +16,7 @@ public class WeaponDecorator : Weapon {
     public override int Accuracy => this.wrapper.Accuracy + this.accuracy;
     public override int Mobility => this.wrapper.Mobility + this.mobility;
 
-    public WeaponDecorator(Weapon wrapper) => this.wrapper = wrapper;
+    public WeaponDecorator(Weapon wrapper) {
+        this.wrapper = wrapper;
+    }
 }

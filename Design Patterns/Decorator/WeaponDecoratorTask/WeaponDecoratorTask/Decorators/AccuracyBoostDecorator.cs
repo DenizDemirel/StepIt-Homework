@@ -1,12 +1,11 @@
 ﻿namespace WeaponDecoratorTask.Decorators;
-
 using WeaponDecoratorTask.Decorators.Base;
 using WeaponDecoratorTask.Models.Base;
 
-public class ScopeDecorator : WeaponDecorator {
-    public ScopeDecorator(Weapon wrapper) : base(wrapper) {
+public class AccuracyBoostDecorator : WeaponDecorator {
+    public AccuracyBoostDecorator(Weapon wrapper) : base(wrapper) {
 
-        this.accuracy = 40;
+        this.accuracy = 20;
         this.mobility = -10;
     }
 }

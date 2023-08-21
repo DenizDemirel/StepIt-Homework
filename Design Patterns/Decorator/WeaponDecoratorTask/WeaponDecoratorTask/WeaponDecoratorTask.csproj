@@ -1,10 +1,54 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Icons\Ui\Left_Icon.jpg" />
+    <None Remove="Icons\Ui\Reset_Icon.jpg" />
+    <None Remove="Icons\Ui\Right_Icon.jpg" />
+    <None Remove="Icons\WeaponCharacteristics\Accuracy_Icon.jpg" />
+    <None Remove="Icons\WeaponCharacteristics\Damage_Icon.jpg" />
+    <None Remove="Icons\WeaponCharacteristics\Mobilicy_Icon.jpg" />
+    <None Remove="Icons\Weapons\Pistol_Icon.jpg" />
+    <None Remove="Icons\Weapons\Rifle_Icon.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\WeaponCharacteristics\Mobilicy_Icon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\Ui\Reset_Icon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\Ui\Left_Icon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\Ui\Right_Icon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\WeaponCharacteristics\Accuracy_Icon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\WeaponCharacteristics\Damage_Icon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\Weapons\Pistol_Icon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\Weapons\Rifle_Icon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
 
 </Project>
