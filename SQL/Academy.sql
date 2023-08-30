@@ -41,8 +41,8 @@ insert into Teachers
 
 insert into Groups(GroupName, NumberOfStudents)
 	values ('FBES_1229_ru',  3),
-    ('FBAS_1222_ru',  3),
-    ('FBES_2_22_5_ru',  3)
+    	('FBAS_1222_ru',  3),
+    	('FBES_2_22_5_ru',  3)
 
 select *
 from Students
